@@ -1,0 +1,8 @@
+#Python auto-generated files/folder
+__pycache__/
+*.pyc
+db.sqlite3
+
+#IDE specific folders
+.idea/
+.vscode

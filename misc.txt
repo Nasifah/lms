@@ -1,0 +1,58 @@
+POLLS: Get information about things from user
+
+Questions
+id/number           Question
+1                   Are you happy about the quality of the training?
+2                   What do you think about "Django middleware"?
+3                   How are you?
+
+Choices
+Questions                   Answer_poll
+1(Are you happy ...)        Yes(3)      No(1)
+2(What do you think ...)    NeverHeardOfIt(90)  IThinkItsCool(3)    DontKnowMuchAboutIt(10)
+
+# for every choice, there must be a question
+# for every question, you do not necessarily need to have a choice - like 3 above can be ignored by user 
+just like how you can have a tweet without any like or retweet, but to have a like you must have a tweet
+
+
+
+SQL
+SELECT * FROM database;
+
+[search]
+
+/search=pen
+SELECT * from database WHERE search == pen;
+
+
+
+STUDENT TASK
+name_of_task    description        date_posted     deadline        mode_of_submission
+add_integers    use variables       June 16         June 17         <click to upload>
+                to add integers
+
+
+
+ADMIN TASK
+question_track      student_id      graded          submission_mode      score
+Python/integer      i4gx763         not graded      https://x.ok         0.5/10
+
+
+
+BLOG
+Post
+name                        post_description            content         pub_date
+How to make more money      Get rich in 30 seconds    ... sqrt(x)     June 16
+
+Comment
+comment_message         Post                date_comment_was_made
+What are you            How to make ...     June 30
+talking about?
+
+#you can have a Post without Comment, but you cannot have a Comment without a Post
+
+
+https://twitter.com
+
+/search
