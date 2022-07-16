@@ -1,10 +1,12 @@
 POLLS: Get information about things from user
 
 Questions
-id/number           Question
+id/number           Question                                                DATE
 1                   Are you happy about the quality of the training?
 2                   What do you think about "Django middleware"?
 3                   How are you?
+4)                  "Are you happy about Django?"                       "June 16, 09:50 WAT"
+5)                  "ARE YOU ..."                                       "JUNE 17, 10:00 WAT"
 
 Choices
 Questions                   Answer_poll
@@ -17,8 +19,12 @@ just like how you can have a tweet without any like or retweet, but to have a li
 
 
 
-SQL
+SQL #only language database understands, and the weird cryptic syntax of writing is below
 SELECT * FROM database;
+CREATE TABLE table_name(
+    char first_name;
+    int age;
+);
 
 [search]
 
@@ -53,6 +59,6 @@ talking about?
 #you can have a Post without Comment, but you cannot have a Comment without a Post
 
 
-https://twitter.com
+https://twitter.com  
 
 /search
