@@ -18,12 +18,13 @@ class Question(models.Model):
 
 
 class Choices(models.Model):
+    # ForeignKey connects info of classes together, so here, this field will have a dropdown of Question_text to choose from
     Question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_answer = models.CharField(max_length=20)
     votes = models.IntegerField(default=0) #default makes it 0/0 for a start before 1/0 - meaning first yes
 
     def __str__(self):
-        return self.choice_answer
+        return f"{self.Question} ---> {self.choice_answer}"  #shows question --->  answer as title instead of object()
 
     #  id        Question                         choice_answer      votes
     #  1)    "Are you happy about Django"         yes/no             1/0
